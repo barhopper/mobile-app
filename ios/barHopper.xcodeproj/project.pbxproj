@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -48,6 +49,7 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		87EDBBD6DBB146309CF0B1FD /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D09A65E10BE49CC89C84BA9 /* Foundation.ttf */; };
 		8FD42CA2E0B245E4A2781048 /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3A91A4289744C9A4CF1217 /* libAirMaps.a */; };
+		9146BB1CFC3346789CC09102 /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F16D0218C7264BB79A1840FB /* libRNImagePicker.a */; };
 		91B1FFEB54C44E0FAA5877A4 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A4F3DBBDEAA44D3AFD865E8 /* FontAwesome5_Brands.ttf */; };
 		A3FD4124AB96453DAF617D94 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3033BE56D6C94EB5BD1999EA /* Octicons.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
@@ -60,7 +62,6 @@
 		F1D1C039939F4438B1C7C84A /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D6FDAE9A2D744C18B31DA01 /* EvilIcons.ttf */; };
 		F604B8FF573E4913B6A223D2 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90E740FFCBA04A2890408D43 /* FontAwesome5_Regular.ttf */; };
 		FA5725D4B9004E63BCD82934 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F609125E4F0A44469C64AEE0 /* Roboto_medium.ttf */; };
-		27011B79572C4FBAA37D2D4D /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1859B97859499BA6305CFB /* libRNImagePicker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +148,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 28C79A09220DC4CC0061DE82;
 			remoteInfo = RNCSlider;
+		};
+		0468179822B700C800484FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B23B8D4E0A04F41A99B279C /* RNImagePicker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 014A3B5C1C6CF33500B6D375;
+			remoteInfo = RNImagePicker;
 		};
 		04D0D32122AF678800B7EED9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -399,6 +407,7 @@
 		7E3A91A4289744C9A4CF1217 /* libAirMaps.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAirMaps.a; sourceTree = "<group>"; };
 		7F34FD8C1C904963832B2EE8 /* libRangeSlider.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRangeSlider.a; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		8B23B8D4E0A04F41A99B279C /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNImagePicker.xcodeproj; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; };
 		8DBED9C15A8E43E3B1D33701 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		90E740FFCBA04A2890408D43 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		9A4F3DBBDEAA44D3AFD865E8 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
@@ -411,10 +420,9 @@
 		E1E663FAB1FF4178BA7A6FF9 /* AirMaps.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = AirMaps.xcodeproj; path = "../node_modules/react-native-maps/lib/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F16D0218C7264BB79A1840FB /* libRNImagePicker.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNImagePicker.a; sourceTree = "<group>"; };
 		F224C7FD32DB4A5B91BB1ABA /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		F609125E4F0A44469C64AEE0 /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
-		BD6C041D8918477EB54A6DBF /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; name = "RNImagePicker.xcodeproj"; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		1A1859B97859499BA6305CFB /* libRNImagePicker.a */ = {isa = PBXFileReference; name = "libRNImagePicker.a"; path = "libRNImagePicker.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -446,7 +454,7 @@
 				BCD9E03126CD47F98C2F6DD5 /* libRangeSlider.a in Frameworks */,
 				0549E39403354AD38CAD7CE2 /* libRNCSlider.a in Frameworks */,
 				8FD42CA2E0B245E4A2781048 /* libAirMaps.a in Frameworks */,
-				27011B79572C4FBAA37D2D4D /* libRNImagePicker.a in Frameworks */,
+				9146BB1CFC3346789CC09102 /* libRNImagePicker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +550,7 @@
 				7F34FD8C1C904963832B2EE8 /* libRangeSlider.a */,
 				2CCEE64C8C9B43F886BF0A9D /* libRNCSlider.a */,
 				7E3A91A4289744C9A4CF1217 /* libAirMaps.a */,
+				F16D0218C7264BB79A1840FB /* libRNImagePicker.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -558,6 +567,14 @@
 			isa = PBXGroup;
 			children = (
 				041F981B22A670B90093CBE2 /* libRangeSlider.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0468179522B700C800484FCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0468179922B700C800484FCF /* libRNImagePicker.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -698,7 +715,7 @@
 				231E5F636EAB408282E583E9 /* RangeSlider.xcodeproj */,
 				7698C96CA3DB48D7A4B49B7D /* RNCSlider.xcodeproj */,
 				E1E663FAB1FF4178BA7A6FF9 /* AirMaps.xcodeproj */,
-				BD6C041D8918477EB54A6DBF /* RNImagePicker.xcodeproj */,
+				8B23B8D4E0A04F41A99B279C /* RNImagePicker.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -924,6 +941,10 @@
 					ProductGroup = 041F981522A670B80093CBE2 /* Products */;
 					ProjectRef = 7698C96CA3DB48D7A4B49B7D /* RNCSlider.xcodeproj */;
 				},
+				{
+					ProductGroup = 0468179522B700C800484FCF /* Products */;
+					ProjectRef = 8B23B8D4E0A04F41A99B279C /* RNImagePicker.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -1011,6 +1032,13 @@
 			fileType = archive.ar;
 			path = libRNCSlider.a;
 			remoteRef = 041F981D22A670B90093CBE2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0468179922B700C800484FCF /* libRNImagePicker.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNImagePicker.a;
+			remoteRef = 0468179822B700C800484FCF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		04D0D32222AF678800B7EED9 /* libAirMaps.a */ = {
@@ -1377,7 +1405,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-range-sliderios/**",
 					"$(SRCROOT)..\node_modules@react-native-communitysliderios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
-					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
 				);
 				INFOPLIST_FILE = BarHopperTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1409,7 +1437,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-range-sliderios/**",
 					"$(SRCROOT)..\node_modules@react-native-communitysliderios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
-					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
 				);
 				INFOPLIST_FILE = BarHopperTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1445,7 +1473,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-range-sliderios/**",
 					"$(SRCROOT)..\node_modules@react-native-communitysliderios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
-					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
 				);
 				INFOPLIST_FILE = BarHopper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1454,7 +1482,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.emaster.barhopper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikon.barhopper;
 				PRODUCT_NAME = BarHopper;
 				PROVISIONING_PROFILE_SPECIFIER = "barhopper-adhoc";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1474,7 +1502,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-range-sliderios/**",
 					"$(SRCROOT)..\node_modules@react-native-communitysliderios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
-					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
 				);
 				INFOPLIST_FILE = BarHopper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1483,7 +1511,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.emaster.barhopper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikon.barhopper;
 				PRODUCT_NAME = BarHopper;
 				PROVISIONING_PROFILE_SPECIFIER = "barhopper-adhoc";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1507,7 +1535,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-range-sliderios/**",
 					"$(SRCROOT)..\node_modules@react-native-communitysliderios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
-					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
 				);
 				INFOPLIST_FILE = "BarHopper-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1547,7 +1575,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-range-sliderios/**",
 					"$(SRCROOT)..\node_modules@react-native-communitysliderios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
-					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
 				);
 				INFOPLIST_FILE = "BarHopper-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1586,7 +1614,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-range-sliderios/**",
 					"$(SRCROOT)..\node_modules@react-native-communitysliderios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
-					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
 				);
 				INFOPLIST_FILE = "BarHopper-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1625,7 +1653,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-range-sliderios/**",
 					"$(SRCROOT)..\node_modules@react-native-communitysliderios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
-					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
 				);
 				INFOPLIST_FILE = "BarHopper-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

@@ -89,7 +89,7 @@ class SignupCustomer extends React.Component {
                                 <Image resizeMode="contain" style={{ height: hp('3%'), width: wp('5%'), tintColor: 'grey' }}
                                     source={require('../../components/Images/emaillogo.png')} />
                             </View>
-                            <View style={{ width: wp('62%'), marginLeft: 5 }}>
+                            <View style={{ alignSelf: 'center',width: wp('62%'), marginLeft: 5 }}>
                                 <TextInput style={styles.textinput1}
                                     underlineColorAndroid="transparent"
                                     placeholder="Enter your email"

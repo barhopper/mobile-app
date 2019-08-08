@@ -82,7 +82,7 @@ export default StyleSheet.create({
 
     text1: {
         color: '#fff',
-        marginLeft: '32%',
+        marginLeft: '35%',
         fontSize: 16,
         fontWeight:'bold'
     },
