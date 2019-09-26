@@ -95,7 +95,9 @@ export default StyleSheet.create({
     textinput1: {
         color: '#000',
         marginLeft: 10,
-        fontSize: 12
+        fontSize: 12,
+        alignSelf:"flex-start"
+
     },
     next:{
         width: width /2 + 20, 

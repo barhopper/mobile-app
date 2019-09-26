@@ -65,7 +65,6 @@ const items = [
         line1: "Longyime watering hole with a weatered bar & pool table in a nautical-themed set...",
         // line2: "bar & pool table in a nautical-themed set...",
     },
- 
 
 ];
 
@@ -106,135 +105,138 @@ class Homepage extends React.Component {
                     notification={() => Actions.Notification()}
 
                 />
-            
-                    <View>
-                        <View style={styles.view1}>
-                            <View style={styles.view2}>
-                                <View >
-                                    <Image source={require("../../components/Images/search.png")}
-                                        style={{ height: 15, width: 15 }}>
-                                    </Image>
-                                </View>
-                                <View style={{ marginHorizontal: 15 }}>
-                                    <TextInput style={styles.textinput1}
-                                        underlineColorAndroid="transparent"
-                                        placeholder="Search"
-                                        placeholderTextColor="#999999"
-                                        autoCapitalize="none"
-                                        value={this.state.search}
-                                        onChangeText={(text) => this.searchUser(text)} />
-                                </View>
+
+                <View>
+                    <View style={styles.view1}>
+                        <View style={styles.view2}>
+                            <View >
+                                <Image source={require("../../components/Images/search.png")}
+                                    style={{ height: 15, width: 15 }}>
+                                </Image>
                             </View>
-                            <View style={styles.view3}>
-                                <View style={styles.view5} />
-                                <TouchableOpacity onPress={()=> Actions.Searchandfilter()}>
+                            <View style={{ marginHorizontal: 15 }}>
+                                <TextInput style={styles.textinput1}
+                                    underlineColorAndroid="transparent"
+                                    placeholder="Search"
+                                    placeholderTextColor="#999999"
+                                    autoCapitalize="none"
+                                    value={this.state.search}
+                                    onChangeText={(text) => this.searchUser(text)} />
+                            </View>
+                        </View>
+                        <View style={styles.view3}>
+                            <View style={styles.view5} />
+                            <TouchableOpacity onPress={() => Actions.Searchandfilter()}>
                                 <Image source={require("../../components/Images/filter.png")}
                                     style={{ height: 15, width: 15 }}>
                                 </Image>
-                                </TouchableOpacity>
-                            </View>
+                            </TouchableOpacity>
                         </View>
-                        <View style={{ marginTop: 10, flexDirection: 'row' }}>
-                            <TouchableOpacity style={styles.touchable1}>
-                                <Text style={{
-                                    color: '#fff',
-                                    fontSize: RF(1.8),
-                                    marginLeft: 10
-                                }}>
-                                    Bars Near Me
+                    </View>
+                    <View style={{ marginTop: 10, flexDirection: 'row' }}>
+                        <TouchableOpacity style={styles.touchable1}>
+                            <Text style={{
+                                color: '#fff',
+                                fontSize: RF(1.8),
+                                marginLeft: 10
+                            }}>
+                                Bars Near Me
                                      </Text>
-                            </TouchableOpacity>
+                        </TouchableOpacity>
 
-                            <TouchableOpacity style={styles.touchable2}>
-                                <Text style={{ color: '#fff', fontSize: RF(1.8), }}>Music</Text>
-                                <Image source={require("../../components/Images/cross.png")}
-                                    style={styles.image1}>
-                                </Image>
-                            </TouchableOpacity>
+                        <TouchableOpacity style={styles.touchable2}>
+                            <Text style={{ color: '#fff', fontSize: RF(1.8), }}>Music</Text>
+                            <Image source={require("../../components/Images/cross.png")}
+                                style={styles.image1}>
+                            </Image>
+                        </TouchableOpacity>
 
-                            <TouchableOpacity style={styles.touchable3}>
-                                <Text style={{ color: '#fff', fontSize: RF(1.8), }}>Pop</Text>
-                                <Image source={require("../../components/Images/cross.png")}
-                                    style={styles.image1}>
-                                </Image>
-                            </TouchableOpacity>
-                        </View>
-                 
+                        <TouchableOpacity style={styles.touchable3}>
+                            <Text style={{ color: '#fff', fontSize: RF(1.8), }}>Pop</Text>
+                            <Image source={require("../../components/Images/cross.png")}
+                                style={styles.image1}>
+                            </Image>
+                        </TouchableOpacity>
+                    </View>
 
-                        <View>
-                            <FlatList
-                                data={items}
-                                // showsVerticalScrollIndicator={false}
-                                renderItem={({ item }) =>
-                                    <TouchableOpacity
-                                        onPress={() => Actions.Barpage()}
-                                    >
-                                        <View style={{ alignItems: 'center', }}>
-                                            <View style={styles.view4}>
 
-                                                <View>
-                                                    <Image source={item.img1}
-                                                        style={styles.image2}>
-                                                    </Image>
-                                                </View>
-                                                <View style={{ width: width / 2 + 43 }}>
+                    <View>
+                        <FlatList
+                            data={items}
+                            showsVerticalScrollIndicator={false}
+                            // removeClippedSubviews={false}
+
+                            renderItem={({ item }) =>
+                                <TouchableOpacity
+                                    onPress={() => Actions.Barpage()}
+                                >
+                                    <View style={{ alignItems: 'center', }}>
+                                        <View style={styles.view4}>
+
+                                            <View>
+                                                <Image source={item.img1}
+                                                    style={styles.image2}>
+                                                </Image>
+                                            </View>
+                                            <View style={{ width: width / 2 + 43 }}>
+                                                <View style={{
+                                                    flexDirection: 'row',
+                                                    justifyContent: 'space-between',
+                                                }}>
+                                                    <View style={{ flex: 4 }}>
+                                                        <Text style={styles.text2}>
+                                                            {item.name}</Text>
+                                                    </View>
                                                     <View style={{
-                                                        flexDirection: 'row',
-                                                        justifyContent: 'space-between',
+                                                        flex: 1,
                                                     }}>
-                                                        <View style={{ flex: 4 }}>
-                                                            <Text style={styles.text2}>
-                                                                {item.name}</Text>
-                                                        </View>
-                                                        <View style={{
-                                                            flex: 1,
+                                                        <Text style={{
+                                                            marginTop: 10,
+                                                            color: '#c42d3e',
+                                                            fontSize: RF(1.8),
                                                         }}>
-                                                            <Text style={{
-                                                                marginTop: 10,
-                                                                color: '#c42d3e',
-                                                                fontSize: RF(1.8),
-                                                            }}>
-                                                                {item.distance}
-                                                            </Text>
-                                                        </View>
+                                                            {item.distance}
+                                                        </Text>
                                                     </View>
-                                                    <View style={styles.view6} />
-                                                    <View style={{ padding: 10, }}>
-                                                        <Text style={styles.text1}>{item.line1}</Text>
-                                                    </View>
+                                                </View>
+                                                <View style={styles.view6} />
+                                                <View style={{ padding: 10, }}>
+                                                    <Text style={styles.text1}>{item.line1}</Text>
                                                 </View>
                                             </View>
                                         </View>
-                                    </TouchableOpacity>
-                                     
-                                }
-                            />
-                        </View>
-                      
-                     
+                                    </View>
+                                </TouchableOpacity>
+
+                            }
+                        />
                     </View>
-                    <TouchableOpacity
-                     style={{ position: 'absolute',
-                      bottom: 10,  alignSelf: 'center',
+
+
+                </View>
+                <TouchableOpacity
+                    style={{
+                        position: 'absolute',
+                        bottom: 10, alignSelf: 'center',
                     }}
-                    >
-                            <View style={{
-                                padding: 13,
-                                width: wp('50%'),
-                                backgroundColor: '#c42d3e',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                borderRadius: 3
-                            }}>
-                                <Text style={{
-                                    color: '#fff',
-                                    fontWeight: 'bold',
-                                    fontSize: RF(2.2)
-                                }}>
-                                    Promotions
-                                    </Text>
-                            </View>
-                            </TouchableOpacity>
+                >
+                    <View style={{
+                        padding: 13,
+                        width: wp('50%'),
+                        backgroundColor: '#c42d3e',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        borderRadius: 3
+                    }}>
+                        <Text style={{
+                            color: '#fff',
+                            fontWeight: 'bold',
+                            fontSize: RF(2.2)
+                        }}>
+                            Promotions
+                        </Text>
+                    </View>
+                </TouchableOpacity>
             </View>
         );
     }

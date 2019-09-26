@@ -87,7 +87,7 @@ class Settings extends React.Component {
                                 </View>
                             </View>
                         </TouchableOpacity>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => Actions.RateApp()}>
                             <View style={styles.view2}>
                                 <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
                                     <Image source={require("../../components/Images/starred.png")}
@@ -97,7 +97,7 @@ class Settings extends React.Component {
                                 </View>
                             </View>
                         </TouchableOpacity>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => Actions.Repot_a_Problem()}>
                             <View style={styles.view2}>
                                 <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
                                     <Image source={require("../../components/Images/report.png")}

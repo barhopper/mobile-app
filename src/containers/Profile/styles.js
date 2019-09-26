@@ -25,7 +25,7 @@ export default StyleSheet.create({
     },
 
     view1:{
-        // height: (width * 0.20),
+         height: (width * 0.14),
          width: width / 1.07,
         shadowOpacity: 2.0,
         backgroundColor: '#fff',
@@ -126,8 +126,8 @@ export default StyleSheet.create({
 
     text1: {
         fontSize: RF(2.2),
-       
+        marginLeft:15,
         color: '#000',
-        textAlign:'center'
+        textAlign:'left'
     },
 });

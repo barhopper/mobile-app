@@ -82,7 +82,7 @@ export default StyleSheet.create({
 
     text1: {
         color: '#fff',
-        marginLeft: '35%',
+        marginLeft: '32%',
         fontSize: 16,
         fontWeight:'bold'
     },
@@ -95,7 +95,8 @@ export default StyleSheet.create({
     textinput1: {
         color: '#000',
         marginLeft: 10,
-        fontSize: 12
+        fontSize: 12,
+        alignSelf:"flex-start"
     },
     next:{
         width: width /2 + 20, 

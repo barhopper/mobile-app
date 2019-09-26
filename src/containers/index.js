@@ -24,12 +24,13 @@ import Feedback from './../containers/Feedback';
 import Mappage from './../containers/Mappage';
 import Profile from './../containers/Profile';
 import Landingpage from './../containers/Landing-Page';
-import Login from './../containers/Login';
+import Login from './../containers/Login'; 
+import RateApp from './../containers/RateApp'; 
+import Repot_a_Problem from './../containers/Repot_a_Problem'; 
 import ResetPassword from './../containers/ResetPassword';
 import ChangePassword from './../containers/ChangePassword';
 import AccountVerified from './../containers/AccountVerified';
 import ConfirmedEmail from './../containers/ConfirmedEmail';
-
 
 import { tsImportEqualsDeclaration } from '@babel/types';
 
@@ -248,14 +249,20 @@ class Root extends Component {
                             key='Landingpage'
                             title='Landingpage'
                         />
-
-
-
-
-
-
-
-
+                         <Scene
+                            component={RateApp}
+                            initial={false}
+                            hideNavBar={true}
+                            key='RateApp'
+                            title='RateApp'
+                        />
+                         <Scene
+                            component={Repot_a_Problem}
+                            initial={false}
+                            hideNavBar={true}
+                            key='Repot_a_Problem'
+                            title='Repot_a_Problem'
+                        />
 
 
                     </Scene>

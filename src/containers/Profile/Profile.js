@@ -11,7 +11,6 @@ import RF from "react-native-responsive-fontsize";
 var ImagePicker = require('react-native-image-picker');
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
-
 var width = Dimensions.get('window').width; //full width
 var height = Dimensions.get('window').height; //full height
 
@@ -123,7 +122,7 @@ class Profile extends React.Component {
                 // profile={() => Actions.Settings()}
                 />
                 <ScrollView>
-                    <View style={{}}>
+                    <View style={{ flex: 1 }}>
                         <TouchableOpacity onPress={this.chooseFile.bind(this)}>
                             <View style={{
                                 marginTop: 20,
@@ -132,9 +131,11 @@ class Profile extends React.Component {
                                 <Image source={this.state.filePath.data !== undefined ? {
                                     uri: 'data:image/jpeg;base64,' + this.state.filePath.data,
                                 } : require("../../components/Images/men.png")}
+                                resizeMode="contain"
+
                                     style={{
                                         height: hp('20%'),
-                                        width: wp('35%'), borderRadius: 80
+                                        width: wp('35%'), borderRadius: 80,
                                     }} />
                             </View>
                         </TouchableOpacity>
@@ -143,7 +144,7 @@ class Profile extends React.Component {
                         </View>
 
                         <View>
-                            <Text style={{ color: '#786a7c', marginLeft: 12, marginTop: 10, fontWeight: 'bold', }}>Change Password</Text>
+                            <Text style={{ color: '#786a7c', marginLeft: 12, marginTop: 10, fontWeight: 'bold', fontSize: 16 }}>Change Password</Text>
                         </View>
                         <View style={styles.view1}>
                             <TextInput style={styles.text1}
@@ -187,8 +188,8 @@ class Profile extends React.Component {
                                 showsVerticalScrollIndicator={false}
                                 renderItem={({ item }) =>
 
-                                    <View style={[styles.view1, { flexDirection: 'row', justifyContent: 'space-between',alignItems:'center',padding:5 }]}>
-                                        <View style={{ flexDirection: 'row',alignItems:'center'  }}>
+                                    <View style={[styles.view1, { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 5 }]}>
+                                        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                                             <View style={{}}>
                                                 <Image source={item.img1}
                                                     style={{
@@ -196,7 +197,7 @@ class Profile extends React.Component {
                                                     }}>
                                                 </Image>
                                             </View>
-                                            <View style={{ marginLeft: 13,}}>
+                                            <View style={{ marginLeft: 13, }}>
 
                                                 <Text style={styles.text1}>{item.line1}</Text>
                                             </View>
